@@ -1,0 +1,251 @@
+/* --- GLOBAL STYLES --- */
+.top-rectangle {
+    width: 100%;
+    height: 45px;           
+    background: #4d2b14;    
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f4ebdc;
+    opacity: 0.7;
+    transition: opacity 0.5s ease-in-out;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+.header {
+    display: flex;
+    justify-content: center;  
+    align-items: center;     
+    margin: 20px 0; 
+}
+
+/* --- NAVBAR --- */
+.navbar {
+    background: #e6d9c8;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;    
+    padding: 0;              
+    font-weight: bold;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #3a2c17;
+    padding: 15px 30px;      
+    background: #e6d9c8;
+    display: flex;           
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;       
+    transition: width 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.navbar a.active {
+    background: #69452d;
+    color: white;
+    width: 1200px;
+}
+
+.navbar a.tes {
+    width: 750px;
+    font-weight: 500;
+}
+
+/* --- PRODUCT SECTIONS & CONTAINERS --- */
+.product-section {
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.product-section-100g, .product-section-250g {
+    background-color: #f4ebdc;
+    padding: 50px 0;
+}
+
+.pembatas {
+    width: 100%;
+    height: 40px; 
+    background: #1A1A1A; 
+    margin: 0; 
+}
+
+/* Container utama agar konten di tengah layar */
+.product-container, .product-container1 {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 30px;
+}
+
+/* --- BOX GAMBAR --- */
+.product-image-box, .product-image-box1 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.prod-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* --- BOX DETAIL TEKS --- */
+.product-details, .product-details1 {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Produk 1: Teks di Kanan (Teks Rata Kiri) */
+.product-details {
+    padding-left: 20px;
+    text-align: left;
+    align-items: flex-start;
+}
+
+/* Produk 2: Teks di Kiri (Teks Rata Kiri agar tidak nimpa foto di kanan) */
+.product-details1 {
+    padding-right: 20px;
+    text-align: left;
+    align-items: flex-start;
+}
+
+/* Typography Reset (MENGHAPUS SEMUA NEGATIVE MARGIN) */
+.product-details h2, .product-details1 h2 {
+    font-size: 42px;
+    margin: 0 0 20px 0;
+    font-weight: 700;
+    color: #1b1b1b;
+}
+
+.product-details p, .product-details1 p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+/* --- COUNTER & PRICE --- */
+.price1, .price2, .total1, .total2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #3a2c17;
+}
+
+.counter-box, .counter-box2 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.counter-btn {
+    width: 40px;
+    height: 40px;
+    background: #6b4c35;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.counter-btn:hover {
+    background: #4d2b14;
+}
+
+/* --- GRIND OPTIONS (Kasar/Halus) --- */
+.grind-options, .grind-options2 {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.grind-btn {
+    padding: 8px 25px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #e6d9c8;
+    color: #3e220e;
+}
+
+.grind-btn.active {
+    background-color: #3e220e;
+    color: #ffffff;
+}
+
+/* --- BUTTONS --- */
+.action-area {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.buy-btn {
+    background-color: #6b4c35; 
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    background-color: #4d2b14;
+}
+
+/* --- FLOATING BUTTONS & FOOTER --- */
+.footer {
+    background: #f4ebdc;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 60px;
+    font-size: 14px;
+    align-items: center;
+}
+
+.wa-floating, .cart-floating {
+    position: fixed;
+    right: 50px;
+    z-index: 9999;
+    transition: 0.3s;
+}
+
+.wa-floating { bottom: 50px; }
+.cart-floating { 
+    bottom: 180px;
+    background-color: #69452d;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wa-floating img { width: 100px; border-radius: 50%; }
+.cart-floating img { width: 70px; }
+
+.wa-floating:hover, .cart-floating:hover { transform: scale(1.1); }

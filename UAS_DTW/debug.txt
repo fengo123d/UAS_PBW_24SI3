@@ -1,0 +1,9 @@
+Array
+(
+    [nama] => asdas
+    [nohp] => 12312
+    [alamat] => asdasd
+    [payment_method] => QRIS
+    [total_harga] => 336000
+    [cart_data] => [{"name":"GOBU Robusta 100G","qty":2,"grind":"KASAR","price":12000,"subTotal":24000},{"name":"GOBU Robusta 100G","qty":4,"grind":"KASAR","price":12000,"subTotal":48000},{"name":"GOBU Robusta 100G","qty":1,"grind":"HALUS","price":12000,"subTotal":12000},{"name":"GOBU Robusta 100G","qty":14,"grind":"HALUS","price":12000,"subTotal":156000},{"name":"GOBU Robusta 250G","qty":4,"grind":"HALUS","price":21000,"subTotal":84000}]
+)
