@@ -1,2 +1,0 @@
-Mencoba potong stok ID: 0, Qty: 2
-Mencoba potong stok ID: 0, Qty: 1
